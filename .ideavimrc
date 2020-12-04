@@ -1,0 +1,36 @@
+set surround
+
+inoremap jk <Esc>
+inoremap kj <Esc>
+set timeoutlen=350 " the default 1 second pause is too much for jk
+
+" Make Y behave like other capitals
+nnoremap Y y$
+
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
+
+" ideavim currently supports this, but not <Space> or \<Space>
+let mapleader=" "
+
+" Remove trailing whitespace
+:nnoremap <leader>sw :%s/\s\+$//e<CR>
+
+
+" clojure mappings
+" load file to repl
+nnoremap <leader>r :action :cursive.repl.actions/load-file<CR>:action :cursive.repl.actions/jump-to-repl<CR>
+" reload all changed dependencies
+nnoremap <leader>a :action :cursive.repl.actions/sync-files<CR>:action :cursive.repl.actions/jump-to-repl<CR>
+" set repl namespace to current file
+nnoremap <leader>n :action :cursive.repl.actions/switch-namespace<CR>:action :cursive.repl.actions/jump-to-repl<CR>
+" reload file, and set repl namespace to current file
+nnoremap <leader>rn :action :cursive.repl.actions/load-file<CR>:action :cursive.repl.actions/switch-namespace<CR>:action :cursive.repl.actions/jump-to-repl<CR>
+
+" conflicting mappings
+map <leader>b :action GotoDeclaration<CR>
+map <leader>e :action RecentFiles<CR>
+
+" Enable for clojure
+" set iskeyword=@,48-57,_,192-255,?,-,*,!,+,/,=,<,>,.,:,$
