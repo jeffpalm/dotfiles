@@ -1,1 +1,1 @@
-:set number 
+/home/jeffpalmdev/bin/dotfiles/vim/vimrc
