@@ -1,1 +1,0 @@
-/home/jeffpalmdev/bin/dotfiles/vim/gvimrc

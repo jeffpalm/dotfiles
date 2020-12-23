@@ -1,0 +1,3 @@
+alias linkdotfiles="ln -nfs ~/dotfiles/vimrc ~/.vimrc && ln -nfs ~/dotfiles/gvimrc ~/.gvimrc && ln -nfs ~/dotfiles/ideavimrc ~/.ideavimrc && ln -nfs ~/dotfiles/colors ~/.vim/colors"
+alias updatealiases="ln -nfs ~/dotfiles/custom_aliases ~/.custom_aliases && source ~/.custom_aliases"
+alias covrdevserver="ssh root@162.242.144.198"

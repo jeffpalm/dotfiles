@@ -1,6 +1,5 @@
 ### Commands for symbolic links
 ```
-ln -nfs ~/bin/dotfiles/vim/vimrc .vimrc
-ln -nfs ~/bin/dotfiles/vim .vim
-ln -nfs ~/bin/dotfiles/vim/gvimrc .gvimrc
+ln -nfs ~/dotfiles/custom_aliases .custom_aliases && source ~/.custom_aliases
+linkdotfiles
 ```

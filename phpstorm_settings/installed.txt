@@ -1,5 +1,0 @@
-IdeaVIM
-com.intellij.plugins.vscodekeymap
-com.markskelton.one-dark-theme
-de.espend.idea.laravel
-de.espend.idea.php.annotation

@@ -18,3 +18,6 @@ set ignorecase
 set smartcase
 
 colorscheme vividchalk
+
+imap jk <Esc>
+imap kj <Esc>
